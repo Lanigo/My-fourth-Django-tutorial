@@ -9,6 +9,7 @@ You can find this tutorial and more like it on my personal website http://lanigo
 - Then install the required packages, into the virtualenv, with:<br/>
   <code>pip install -r requirements.txt</code>
 - Add a SECRET_KEY in <strong>settings.py</strong>
+- Create a MySQL database and add the details to the DATABASES setting in <strong>settings.py</strong>
 - Then <code>python manage.py migrate</code>
 - Create a superuser for the admin site: <code>python manage.py createsuperuser</code>
 - And <code>python manage.py runserver</code> to activate the development server.
