@@ -8,7 +8,7 @@
 			</div>
 		{% endif %}
 		<h2>{{post.title }}</h2>
-		<p>{{ post.text }}</p>
+		<p>{{ post.text|safe }}</p>
 	</div>
 	<hr>
 	<a class="btn" href="{% url "add_comment_to_post" slug=post.slug %}">Add comment</a>

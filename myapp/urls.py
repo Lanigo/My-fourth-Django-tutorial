@@ -1,5 +1,6 @@
 from django.conf.urls import url
 from . import views
+from . import feeds
 
 urlpatterns = [
 	url(r'^$', views.home, name='home'),
@@ -8,4 +9,6 @@ urlpatterns = [
 	url(r'^blog/(?P<slug>[\w-]+)/$', views.post_detail, name='post_detail'),
 	# add our url for comments here
 	url(r'^blog/(?P<slug>[\w-]+)//comment/$', views.add_comment_to_post, name='add_comment_to_post'),
+	# add the url below
+	url(r'^feeds/posts/$', feeds.PostsFeed(), name='feeds_posts'),
 ]

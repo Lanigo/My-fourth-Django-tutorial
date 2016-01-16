@@ -2,5 +2,7 @@
 
     {% block content %}
       	<h1>Success! Congrats! It works!</h1>
+		{% load post_tags %}
+		{% get_recent_posts %}      	
     {% endblock %}
     

@@ -8,7 +8,7 @@
 		<div class="post">
 			<p>Date: {{post.published_date }}</p>
 			<h2><a href="{% url "post_detail" slug=post.slug %}">{{ post.title }}</a></h2>
-			<p>{{ post.text|truncatechars:100 }}</p>
+			<p>{{ post.text|truncatechars:150|safe }}</p>
 			<!-- add this line-->
 			<h2><a href="{% url "post_detail" slug=post.slug %}">Comments: {{ post.comments.count }}</a></h2>
  		<div>

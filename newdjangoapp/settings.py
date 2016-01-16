@@ -39,8 +39,15 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myapp',
-
+    'ckeditor',
 )
+
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+CKEDITOR_JQUERY_URL = '/ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'
+CKEDITOR_CONFIGS = {
+    'default': {
+    },
+}
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',

@@ -3,5 +3,6 @@ from django.contrib import admin
 
 urlpatterns = [
 	url(r'', include('myapp.urls')),
-    url(r'^admin/', include(admin.site.urls)),
+	url(r'^admin/', include(admin.site.urls)),
+	url(r'^ckeditor/', include('ckeditor.urls')),
 ]

@@ -1,8 +1,9 @@
-from .models import Post, Comment  	# import Comment as well
+from .models import Post, Comment  	
 from django.contrib import admin
 
 class PostAdmin(admin.ModelAdmin):
-    prepopulated_fields = {"slug": ("title",)}
+	prepopulated_fields = {"slug": ("title",)}
+	list_display = ("title", "created_date")
 
 admin.site.register(Post, PostAdmin)
-admin.site.register(Comment)  		#register our model
+admin.site.register(Comment)  		
