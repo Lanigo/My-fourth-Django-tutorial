@@ -1,4 +1,4 @@
-# my-second-django-tutorial
+# my-fourth-django-tutorial
 This is the code for a tutorial I created about Django for beginners, with special focus on Windows.<br/>
 You can find this tutorial and more like it on my personal website http://lanigouws.com
 
